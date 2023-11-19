@@ -1,0 +1,88 @@
+.main-product {
+    display: flex;
+    margin: 20px 10px;
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 32px 0px;
+}
+
+
+.l__main-product {
+    float: left;
+    width: 20%;
+    padding: 0px 6px;
+}
+
+.m__main-product {
+    width: 80%;
+}
+
+/* chung  */
+
+
+/* category */
+.category {
+    margin: 0 0 16px 0;
+    background-color: #fff;
+    padding: 16px 8px;
+}
+
+.category h {
+    font-weight: bold;
+    padding: 4px;
+    font-size: 18px;
+}
+
+.category div {
+    padding: 6px 8px;
+}
+
+.category a {
+    text-decoration: none;
+    color: black;
+}
+
+.category div:hover {
+    background-color: #e7e7e7;
+}
+
+
+/* .voucher */
+.voucher {
+    margin: 0 0 16px 0;
+    background-color: #fff;
+    padding: 16px 8px;
+}
+
+.voucher h {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.r_voucher {
+    display: inline-block;
+    line-height: 1.5;
+}
+
+.r_voucher .row-voucher {
+    margin: 8px;
+    background: #EE4D2D;
+    padding: 8px;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.row-voucher a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.r_voucher .row-voucher>.title-voucher {
+    text-transform: uppercase;
+}
+
+.row-voucher>a:hover {
+    font-weight: bold;
+}

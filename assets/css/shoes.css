@@ -1,0 +1,46 @@
+.size-shoes {
+    margin: 0 0 16px 0;
+    background-color: #fff;
+    padding: 8px;
+}
+
+.size-shoes h {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.prod-size,
+.prod-color {
+    margin: 10px 0px;
+}
+
+
+.l__prod-type {
+    display: flex;
+    width: 100%;
+
+    flex-wrap: wrap;
+}
+
+.l__prod-type button {
+    width: auto;
+    padding: 5px 1px;
+    transition-duration: 0.4s;
+    padding: 4px 6px;
+    margin: 6px;
+    display: block;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.prod-color .l__prod-type button {
+    border: none;
+}
+
+.size button {
+    background-color: #fff;
+}
+
+.l__prod-type button:hover {
+    background-color: #e7e7e7 !important;
+    cursor: pointer;
+}

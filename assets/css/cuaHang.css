@@ -1,0 +1,69 @@
+.container{
+    display: block;
+    margin: 0px 30px;
+    background-color: rgb(255, 255, 255);
+}
+.container h{
+    line-height: 1.8;
+    font-size: 25px;
+
+}
+.m__container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.l__container{
+    width: 40%;
+    margin-right: 40px;
+    background-color: rgb(248, 248, 248);
+}
+.l__container .opt{
+    margin: 10px;
+    width: 90%;
+    font-size: 18px;
+    height: 30px;
+    border: 2px whitesmoke solid;
+    border-radius: 7px;
+}
+.l__container .opt option{
+    font-size: 18px;
+}
+.l__container #storeList{
+    height: 400px;
+    overflow-y: scroll;
+}
+.storeInf{
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.storeInf .storeName{
+    font-weight: bolder;
+    padding-left: 20px;
+    color: rgb(31, 49, 242);
+}
+.storeAddress, .storeNum, .storeTime{
+    display: flex;
+    justify-content: left;
+    padding: 2px;
+}
+.smallIcon{
+    padding-right: 5px;
+}
+.smallIcon img{
+    height: 19px;
+}
+
+.storeInf:hover{
+    background-color: rgb(226, 224, 224);
+    border: 1px rgb(31, 49, 242) solid;
+}
+
+
+
+.r__container{
+    width: 55%;
+    border: 1px rgb(226, 223, 223) solid;
+}
