@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/style.css" rel="stylesheet" />
+    <link href="./assets/css/gioHang.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+<body>
+    <!-- thanh điều hướng -->
+    <div class="navigation">
+        <ul class="main-menu">
+            <li><a href="./index.html">Trang chủ</a></li>
+            <li><a href="./nav__foot-shirt.html">Áo bóng đá</a></li>
+            <li><a href="./nav__shoes.html">Giày bóng đá</a></li>
+            <li><a href="./nav__balo.html">Balo túi xách</a></li>
+            <li><a href="./nav__ball.html">Quả bóng đá</a></li>
+            <li><a href="#">Phụ kiện khác</a>
+                <ul class="sub-menu">
+                    <li><a href="./nav__vo.html">Vớ</a></li>
+                    <li><a href="./nav__gangtay.html">Găng tay thủ môn</a></li>
+                    <li><a href="./nav__bocongdong.html">Bọc ống đồng</a></li>
+                </ul>
+            </li>
+            <li><a href="./cuaHang.html">Hệ thống cửa hàng</a></li>
+            <li><a href="./lienhe.html">Liên hệ</a></li>
+        </ul>
+    </div>
+    <div class="c_container">
+        <div class="l_container">
+            <table id="cart">
+                <caption>SẢN PHẨM ĐÃ CHỌN</caption>
+                <tbody>
+                    <tr >
+                        <td><input type="checkbox" class="chon" checked onchange="toggleRowStatus(this)"></td>
+                        <td>
+                            <div class="img_cart">
+                                <img src="./assets/img/shoes/giay-kamito-velocidad-legend-1-1686906611185.jpg" alt="lỗi">
+                            </div>
+                        </td>
+                        <td>Giày Kamito Velocidad legend</td> 
+                        <td>130000</td>
+                        <td>
+                            <div class="buy-amount">
+                                <button class="minus-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                                      </svg>
+                                </button>
+                                <input class="amount" type="text" name="amount" id="amount1" value="1">
+                                <button class="plus-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                                    </svg>
+    
+                                </button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="delete-p" onclick="removeRow(this)">
+                                <button class="trash">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                                        <path fill-rule="evenodd" d="M8.75 1A2.75 2.75 0 006 3.75v.443c-.795.077-1.584.176-2.365.298a.75.75 0 10.23 1.482l.149-.022.841 10.518A2.75 2.75 0 007.596 19h4.807a2.75 2.75 0 002.742-2.53l.841-10.52.149.023a.75.75 0 00.23-1.482A41.03 41.03 0 0014 4.193V3.75A2.75 2.75 0 0011.25 1h-2.5zM10 4c.84 0 1.673.025 2.5.075V3.75c0-.69-.56-1.25-1.25-1.25h-2.5c-.69 0-1.25.56-1.25 1.25v.325C8.327 4.025 9.16 4 10 4zM8.58 7.72a.75.75 0 00-1.5.06l.3 7.5a.75.75 0 101.5-.06l-.3-7.5zm4.34.06a.75.75 0 10-1.5-.06l-.3 7.5a.75.75 0 101.5.06l.3-7.5z" clip-rule="evenodd" />
+                                      </svg>
+                                                                            
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="chon" checked onchange="toggleRowStatus(this)"></td>
+                        <td>
+                            <div class="img_cart">
+                                <img src="./assets/img/shirt/ao-bong-da-barca-2023-home-front.jpg" alt="lỗi">
+                            </div>
+                        </td>
+                        <td>Áo Barcelona 2023-2024</td> 
+                        <td>115000</td>
+                        <td>
+                            <div class="buy-amount">
+                                <button class="minus-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                                      </svg>
+                                </button>
+                                <input class="amount" type="text" name="amount" id="amount2" value="1">
+                                <button class="plus-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                                    </svg>   
+                                </button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="delete-p" onclick="removeRow(this)">
+                                <button class="trash">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                                        <path fill-rule="evenodd" d="M8.75 1A2.75 2.75 0 006 3.75v.443c-.795.077-1.584.176-2.365.298a.75.75 0 10.23 1.482l.149-.022.841 10.518A2.75 2.75 0 007.596 19h4.807a2.75 2.75 0 002.742-2.53l.841-10.52.149.023a.75.75 0 00.23-1.482A41.03 41.03 0 0014 4.193V3.75A2.75 2.75 0 0011.25 1h-2.5zM10 4c.84 0 1.673.025 2.5.075V3.75c0-.69-.56-1.25-1.25-1.25h-2.5c-.69 0-1.25.56-1.25 1.25v.325C8.327 4.025 9.16 4 10 4zM8.58 7.72a.75.75 0 00-1.5.06l.3 7.5a.75.75 0 101.5-.06l-.3-7.5zm4.34.06a.75.75 0 10-1.5-.06l-.3 7.5a.75.75 0 101.5.06l.3-7.5z" clip-rule="evenodd" />
+                                      </svg>                                        
+                                </button>
+                            </div>
+                        </td>
+                    </tr> 
+                    <tr >
+                        <td><input type="checkbox" class="chon" checked onchange="toggleRowStatus(this)"></td>
+                        <td>
+                            <div class="img_cart">
+                                <img src="./assets/img/best-sale/new-chelsea-xanh-front.jpg" alt="lỗi">
+                            </div>
+                        </td>
+                        <td>Áo Chelsea 2023-2024 Home</td> 
+                        <td>130000</td>
+                        <td>
+                            <div class="buy-amount">
+                                <button class="minus-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                                      </svg>
+                                </button>
+                                <input class="amount" type="text" name="amount" id="amount1" value="1">
+                                <button class="plus-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                                    </svg>
+    
+                                </button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="delete-p" onclick="removeRow(this)">
+                                <button class="trash">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                                        <path fill-rule="evenodd" d="M8.75 1A2.75 2.75 0 006 3.75v.443c-.795.077-1.584.176-2.365.298a.75.75 0 10.23 1.482l.149-.022.841 10.518A2.75 2.75 0 007.596 19h4.807a2.75 2.75 0 002.742-2.53l.841-10.52.149.023a.75.75 0 00.23-1.482A41.03 41.03 0 0014 4.193V3.75A2.75 2.75 0 0011.25 1h-2.5zM10 4c.84 0 1.673.025 2.5.075V3.75c0-.69-.56-1.25-1.25-1.25h-2.5c-.69 0-1.25.56-1.25 1.25v.325C8.327 4.025 9.16 4 10 4zM8.58 7.72a.75.75 0 00-1.5.06l.3 7.5a.75.75 0 101.5-.06l-.3-7.5zm4.34.06a.75.75 0 10-1.5-.06l-.3 7.5a.75.75 0 101.5.06l.3-7.5z" clip-rule="evenodd" />
+                                      </svg>
+                                                                            
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="chon" checked onchange="toggleRowStatus(this)"></td>
+                        <td>
+                            <div class="img_cart">
+                                <img src="./assets/img/ball/qua-bong-v-league-cobra-3b.webp" alt="lỗi">
+                            </div>
+                        </td>
+                        <td>Quả bóng V League 2022</td> 
+                        <td>90000</td>
+                        <td>
+                            <div class="buy-amount">
+                                <button class="minus-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                                      </svg>
+                                </button>
+                                <input class="amount" type="text" name="amount" id="amount2" value="1">
+                                <button class="plus-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                                    </svg>   
+                                </button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="delete-p" onclick="removeRow(this)">
+                                <button class="trash">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                                        <path fill-rule="evenodd" d="M8.75 1A2.75 2.75 0 006 3.75v.443c-.795.077-1.584.176-2.365.298a.75.75 0 10.23 1.482l.149-.022.841 10.518A2.75 2.75 0 007.596 19h4.807a2.75 2.75 0 002.742-2.53l.841-10.52.149.023a.75.75 0 00.23-1.482A41.03 41.03 0 0014 4.193V3.75A2.75 2.75 0 0011.25 1h-2.5zM10 4c.84 0 1.673.025 2.5.075V3.75c0-.69-.56-1.25-1.25-1.25h-2.5c-.69 0-1.25.56-1.25 1.25v.325C8.327 4.025 9.16 4 10 4zM8.58 7.72a.75.75 0 00-1.5.06l.3 7.5a.75.75 0 101.5-.06l-.3-7.5zm4.34.06a.75.75 0 10-1.5-.06l-.3 7.5a.75.75 0 101.5.06l.3-7.5z" clip-rule="evenodd" />
+                                      </svg>                                        
+                                </button>
+                            </div>
+                        </td>
+                    </tr> 
+                    <tr >
+                        <td><input type="checkbox" class="chon" checked onchange="toggleRowStatus(this)"></td>
+                        <td>
+                            <div class="img_cart">
+                                <img src="./assets/img/best-sale/messi-copa-mundo_104.webp" alt="lỗi">
+                            </div>
+                        </td>
+                        <td>Áo Argentina Copa America 2022</td> 
+                        <td>150000</td>
+                        <td>
+                            <div class="buy-amount">
+                                <button class="minus-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                                      </svg>
+                                </button>
+                                <input class="amount" type="text" name="amount" id="amount1" value="1">
+                                <button class="plus-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                                    </svg>
+    
+                                </button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="delete-p" onclick="removeRow(this)">
+                                <button class="trash">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                                        <path fill-rule="evenodd" d="M8.75 1A2.75 2.75 0 006 3.75v.443c-.795.077-1.584.176-2.365.298a.75.75 0 10.23 1.482l.149-.022.841 10.518A2.75 2.75 0 007.596 19h4.807a2.75 2.75 0 002.742-2.53l.841-10.52.149.023a.75.75 0 00.23-1.482A41.03 41.03 0 0014 4.193V3.75A2.75 2.75 0 0011.25 1h-2.5zM10 4c.84 0 1.673.025 2.5.075V3.75c0-.69-.56-1.25-1.25-1.25h-2.5c-.69 0-1.25.56-1.25 1.25v.325C8.327 4.025 9.16 4 10 4zM8.58 7.72a.75.75 0 00-1.5.06l.3 7.5a.75.75 0 101.5-.06l-.3-7.5zm4.34.06a.75.75 0 10-1.5-.06l-.3 7.5a.75.75 0 101.5.06l.3-7.5z" clip-rule="evenodd" />
+                                      </svg>
+                                                                            
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="chon" checked onchange="toggleRowStatus(this)"></td>
+                        <td>
+                            <div class="img_cart">
+                                <img src="./assets/img/best-sale/new-chelsea-xanh-front.jpg" alt="lỗi">
+                            </div>
+                        </td>
+                        <td>Áo Chelsea xanh 2022-2023</td> 
+                        <td>130000</td>
+                        <td>
+                            <div class="buy-amount">
+                                <button class="minus-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                                      </svg>
+                                </button>
+                                <input class="amount" type="text" name="amount" id="amount2" value="1">
+                                <button class="plus-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                                    </svg>   
+                                </button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="delete-p" onclick="removeRow(this)">
+                                <button class="trash">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                                        <path fill-rule="evenodd" d="M8.75 1A2.75 2.75 0 006 3.75v.443c-.795.077-1.584.176-2.365.298a.75.75 0 10.23 1.482l.149-.022.841 10.518A2.75 2.75 0 007.596 19h4.807a2.75 2.75 0 002.742-2.53l.841-10.52.149.023a.75.75 0 00.23-1.482A41.03 41.03 0 0014 4.193V3.75A2.75 2.75 0 0011.25 1h-2.5zM10 4c.84 0 1.673.025 2.5.075V3.75c0-.69-.56-1.25-1.25-1.25h-2.5c-.69 0-1.25.56-1.25 1.25v.325C8.327 4.025 9.16 4 10 4zM8.58 7.72a.75.75 0 00-1.5.06l.3 7.5a.75.75 0 101.5-.06l-.3-7.5zm4.34.06a.75.75 0 10-1.5-.06l-.3 7.5a.75.75 0 101.5.06l.3-7.5z" clip-rule="evenodd" />
+                                      </svg>                                        
+                                </button>
+                            </div>
+                        </td>
+                    </tr> 
+                </tbody>
+            </table>
+        </div>
+        <div class="r_container">
+            <div class="text-pay">
+                <p>Tạm tính: <span id="tong">0</span></p>
+                <p style="padding-bottom: 10px;">Giảm giá: <span id="voucher">20000</span></p>
+                <hr>
+                <p>Thành tiền: <span id="thanhTien">0</span></p>
+            </div>
+            <div class="btn-pay">
+                <button class="pay"> THANH TOÁN NGAY</button>
+                <button id="continueChosen">Tiếp tục mua hàng</button>
+            </div>
+            
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="block-features">
+            <div class="block-features-list">
+                <div class="block-features-item">
+                    <div class="block-features-icon">
+                        <img src="./assets/img/icon-doi-tra.jpg" height="48" alt="Đổi trả trong 90 ngày">
+                    </div>
+                    <div class="block-features-content">
+                        <div class="block-features-title">Đổi trả trong 90 ngày</div>
+                        <div class="block-features-subtitle">Leo Sport có chính sách đổi trả trong 90 ngày chưa qua sử
+                            dụng</div>
+                    </div>
+                </div>
+                <div class="block-features-divider"></div>
+                <div class="block-features-item">
+                    <div class="block-features-icon">
+                        <img src="./assets/img/icon-giao-hang.jpg" height="48" alt="Giao hàng nhanh">
+                    </div>
+                    <div class="block-features-content">
+                        <div class="block-features-title">GIAO HÀNG SIÊU NHANH</div>
+                        <div class="block-features-subtitle">Leo Sport giao hàng siêu nhanh nội thành TP.HCM chỉ trong
+                            2H</div>
+                    </div>
+                </div>
+                <div class="block-features-divider"></div>
+                <div class="block-features-item">
+                    <div class="block-features-icon">
+                        <img src="./assets/img/icon-bao-hanh.jpg" height="48" alt="Bảo hành trọn đời">
+                    </div>
+                    <div class="block-features-content">
+                        <div class="block-features-title">BẢO HÀNH TRỌN ĐỜI</div>
+                        <div class="block-features-subtitle">Leo Sport bảo hành miễn phí keo trọn đời suốt quá trình quý
+                            khách sử dụng</div>
+                    </div>
+                </div>
+                <div class="block-features-divider"></div>
+                <div class="block-features-item">
+                    <div class="block-features-icon">
+                        <img src="./assets/img/icon-chinh-hang.jpg" height="48" alt="cam kết chính hãng">
+                    </div>
+                    <div class="block-features-content">
+                        <div class="block-features-title">HÀNG CHÍNH HÃNG 100%</div>
+                        <div class="block-features-subtitle">Leo Sport cam kết bán hàng chính hãng 100%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-container">
+            <div class="footer-container-fluid">
+                <div class="footer-col">
+                    <h class="title">VỀ CHÚNG TÔI</h>
+                    <ul>
+                        <li><a href="./index.html">Trang chủ</a></li>
+                        <li><a href="./lh_gioiThieu.html">Giới thiệu</a></li>
+                        <li><a href="./lienhe.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h class="title">CHÍNH SÁCH</h>
+                    <ul>
+                        <li><a href="./cs__dieuKhoan.html">Điều khoản dịch vụ</a></li>
+                        <li><a href="./cs__baoMat.html">Chính sách bảo mật</a></li>
+                        <li><a href="./cs__vanChuyen.html">Chính sách vận chuyển</a></li>
+                        <li><a href="./cs__doiTra.html">Chính sách đổi trả</a></li>
+                        <li><a href="./cs__baoHanh.html">Chính sách bảo hành</a></li>
+                        <li><a href="./cs__thanhToan.html">Chính sách thanh toán</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h class="title">HỖ TRỢ KHÁCH HÀNG</h>
+                    <ul>
+                        <li><a href="./hd__chonSize.html">Hướng dẫn chọn size</a></li>
+                        <li><a href="./hd__chung.html">Hướng dẫn mua hàng</a></li>
+                        <li><a href="./hd__chung.html">Hướng dẫn thanh toán</a></li>
+                        <li><a href="./hd__chung.html">Hướng dẫn giao nhận</a></li>
+                        <li><a href="./hd_cauHoi.html">Câu hỏi thường gặp</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h class="title">LIÊN KẾT</h>
+                    <p>Hãy kết nối với chúng tôi</p>
+                </div>   
+            </div>
+            <div class="footer-map">
+                <h class="title">Bản đồ</h>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9319.359337965549!2d106.61292152262905!3d10.86416742653209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752b2a11844fb9%3A0xbed3d5f0a6d6e0fe!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBHaWFvIFRow7RuZyBW4bqtbiBU4bqjaSBUaMOgbmggUGjhu5EgSOG7kyBDaMOtIE1pbmggLSBDxqEgc-G7nyAz!5e0!3m2!1svi!2s!4v1698210425281!5m2!1svi!2s"
+                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>  
+            </div>
+            <div class="footer-address">
+                <div class="footer-add_logo">
+                    <a href="./index.html"><img src="./assets/img/banner/hinh-nen-messi-an-mung-4k_081533033.jpg"></a>
+                </div>
+                <div class="footer-add_inf">
+                    <ul>
+                        <li>Địa chỉ: 90 Huỳnh Văn Một, Phường Hiệp Tân, Quận Tân Phú, Thành phố Hồ Chí Minh.</li>
+                        <li>Email: leosport.hcm@gmail.com - leosportstore@gmail.com</li>
+                        <li>Hotline (Hỗ trợ 24/7): 19008098</li>
+                        <li>Website: leosport.vn - leosport.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                Copyright 2023 © Leo Sport
+            </div>
+        </div> 
+    </div>
+    <script src="./assets/js/gioHang.js"></script>   
+</body>
+</html>

@@ -75,24 +75,37 @@
 
 
 .add-cart{
-    position: relative;
-    top: 30px;
-    left:25%;
+    margin: 50px 25% 0 25%;
     width: 50%;
-    border: 1.5px rgb(247, 58, 11) solid;
     border-radius: 10px;
     font-weight: bold;
     margin-bottom: 40px;
 }
+.button-order{
+    width: 100%;
+    border: 2px solid #3498db; /* Độ rộng và màu sắc của đường viền */
+    border-radius: 5px; /* Độ cong của góc nút */
+}
+
 .add-cart p{
     color: rgb(247, 58, 11);
     text-align: center;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
 }
-.add-cart:hover, .copy-voucher p1:hover{
+
+.button-order:hover{
     background-color: rgb(247, 58, 11);
-    color: aliceblue; /*copy-voucher */
+    color: aliceblue;
 }
-.add-cart:hover p{
+
+.button-order:hover p{
+    color: aliceblue;
+}
+.copy-voucher p1:hover{
+    background-color: rgb(247, 58, 11);
     color: aliceblue;
 }
 .price-list{

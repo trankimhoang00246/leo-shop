@@ -1,0 +1,146 @@
+.c_container{
+    padding: 20px;
+    margin: 0 20px 0 20px;
+    /* background:darkkhaki; */
+    /* padding:20px; */
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-around;
+}
+.l_container{
+    width: 80%;
+    margin-right: 30px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;
+}
+
+table{
+    width: 100%;
+    border-collapse:collapse;
+}
+th, td{
+    width: fit-content;
+    padding: 10px;
+    text-align: center;
+}
+caption{
+    font-weight: 600; 
+    font-size: 1.2em;
+}
+button{
+    width: 60px; 
+    height: 25px;
+}
+/* .img_cart{
+    display: block;
+    width: 100%; 
+} */
+
+.img_text{
+    background-color: bisque;
+    display: flex;
+    justify-content:flex-start;
+}
+.img_cart img{
+    width: 25%;
+}
+.buy-amount{
+    display: flex;
+}
+.buy-amount button{ 
+    width: 35px;
+    height: 35px;
+    outline: none;
+    background: none;
+    border: 1px solid #ececec;
+    cursor: pointer;
+}
+.buy-amount button:hover{
+    background-color: #ececec;
+}
+.buy-amount button svg{
+    color: #909090;
+}
+.buy-amount button:hover svg{
+    color: #4f4f4f;
+}
+.buy-amount .amount{
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ececec;
+}
+.delete-p button{
+    width: 25px;
+    height: 25px;
+    outline: none;
+    background: none;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+}
+.delete-p button:hover svg{
+    color: red;
+}
+.r_container{
+    width: 20%;
+    height: fit-content;
+    background-color: #F8F8FF;
+    border: 1px solid whitesmoke;
+    position: sticky;
+    top: 75px;
+}
+.r_container:hover{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;
+}
+.r_container .text-pay{
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: left;
+    line-height: 1.6;
+    font-weight: 525;
+}
+.r_container p{
+    padding-top: 10px;
+}
+.r_container .btn-pay{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+}
+.r_container  button{
+    width: 90%;
+    height:max-content;
+    margin-top: 25px;
+    font-size: 16px; /* Kích thước chữ */
+    line-height: 2;
+    border-radius: 4px; /* Bo góc */
+    cursor: pointer; /* Con trỏ khi rê chuột */
+    text-transform: uppercase;
+}
+.r_container  .pay{
+    color: #FFFFFF;
+    border: 1px solid ;
+    background-color: #EE0000; /* Màu nền */
+}
+.r_container .pay:hover{
+    background-color:#FF0000;
+    border: 1px solid #EE0000;
+    font-weight: bold;
+}
+.r_container  #continueChosen{
+    background-color:#FFFFFF;
+    color: #EE0000;
+    border: 1px solid #EE0000;
+    margin-bottom: 25px;
+    
+}
+.r_container #continueChosen:hover{
+    background-color: #DCDCDC;
+    font-weight: bold;
+}
+
+/* <div class="r_container">
+<h3>Thành tiền: <span id="tong">0</span></h3>
+<hr>
+<button class="pay"> THANH TOÁN NGAY</button>
+<button id="homeButton">Tiếp tục mua hàng</button>
+</div> */
