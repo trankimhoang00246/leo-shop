@@ -60,6 +60,16 @@ function removeRow(button) {
   row.parentNode.removeChild(row);
   tinhtong();
 }
+function removeAllRows() {
+  var table = document.getElementById("cart");
+  var rowCount = table.rows.length;
+
+  for (var i = 0; i < rowCount; i++) {
+    table.deleteRow(0);
+  }
+
+  tinhtong();
+}
 // //đảo trạng thái
 // function toggleRowStatus(checkbox) {
 //   var row = checkbox.parentNode.parentNode;

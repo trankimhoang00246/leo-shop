@@ -246,18 +246,27 @@
             </table>
         </div>
         <div class="r_container">
-            <div class="text-pay">
-                <p>Tạm tính: <span id="tong">0</span></p>
-                <p style="padding-bottom: 10px;">Giảm giá: <span id="voucher">20000</span></p>
-                <hr>
-                <p>Thành tiền: <span id="thanhTien">0</span></p>
+            <div class="r_top_comtainer">
+                <div class="text-pay">
+                    <p>Tạm tính: <span id="tong">0</span></p>
+                    <p style="padding-bottom: 10px;">Giảm giá: <span id="voucher">20000</span></p>
+                    <hr>
+                    <p>Thành tiền: <span id="thanhTien">0</span></p>
+                </div>
+                <div class="btn-pay">
+                    <button class="pay"> THANH TOÁN NGAY</button>
+                    <button id="continueChosen">Tiếp tục mua hàng</button>
+                </div>
+
             </div>
-            <div class="btn-pay">
-                <button class="pay"> THANH TOÁN NGAY</button>
-                <button id="continueChosen">Tiếp tục mua hàng</button>
+            <div class="r_bottom_container">
+                <button id="clearAll" onclick="removeAllRows()">Xóa tất cả sản phẩm</button>
+    
             </div>
             
+            
         </div>
+        
     </div>
     <!-- footer -->
     <div class="footer">

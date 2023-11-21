@@ -23,8 +23,12 @@ th, td{
     text-align: center;
 }
 caption{
+    padding-top: 20px;
     font-weight: 600; 
     font-size: 1.2em;
+}
+#cart > #clearAll{
+    float: right;
 }
 button{
     width: 60px; 
@@ -87,7 +91,7 @@ button{
     position: sticky;
     top: 75px;
 }
-.r_container:hover{
+.r_top_comtainer:hover{
     box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;
 }
 .r_container .text-pay{
@@ -106,7 +110,7 @@ button{
     justify-content:flex-start;
     align-items: center;
 }
-.r_container  button{
+.r_top_comtainer button{
     width: 90%;
     height:max-content;
     margin-top: 25px;
@@ -116,6 +120,7 @@ button{
     cursor: pointer; /* Con trỏ khi rê chuột */
     text-transform: uppercase;
 }
+
 .r_container  .pay{
     color: #FFFFFF;
     border: 1px solid ;
@@ -138,9 +143,16 @@ button{
     font-weight: bold;
 }
 
-/* <div class="r_container">
-<h3>Thành tiền: <span id="tong">0</span></h3>
-<hr>
-<button class="pay"> THANH TOÁN NGAY</button>
-<button id="homeButton">Tiếp tục mua hàng</button>
-</div> */
+.r_bottom_container > button{
+    width: 90%;
+    background-color: #F8F8FF;
+    height:max-content;
+    margin-top: 25px;
+    font-size: 13px; /* Kích thước chữ */
+    border: none;
+    cursor: pointer; /* Con trỏ khi rê chuột */
+    text-decoration: underline;
+}
+.r_bottom_container > button:hover{
+    color: rgb(64, 64, 243);
+}
