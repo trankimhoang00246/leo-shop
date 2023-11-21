@@ -156,11 +156,10 @@
 
 .header-bottom {
     width: 100%;
-    height: 500px;
-    float: clear;
-    background: url("../img/banner/hinh-nen-messi-an-mung-4k_081533033.jpg") no-repeat;
-    background-size: cover;
+    height: 650px;
     display: block;
+    position: relative;
+    overflow: hidden;
 }
 
 .header-bottom>p {
