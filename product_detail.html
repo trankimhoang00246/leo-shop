@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../assets/css/detail_product.css" rel="stylesheet" />
-    <link href="../assets/css/style.css" rel="stylesheet" />
+    <link href="./assets/css/detail_product.css" rel="stylesheet" />
+    <link href="./assets/css/style.css" rel="stylesheet" />
     <title>Sản phẩm</title>
 </head>
 
@@ -31,22 +31,131 @@
     </div>
     <div class="main-product">
         <div class="t__main-product">
+
+
+            <div id="product-details">
+                <!-- Product information will be displayed here -->
+            </div>
+
+            <script>
+                // Retrieve the productId from the URL query parameter
+                const urlParams = new URLSearchParams(window.location.search);
+                const productId = urlParams.get("id");
+
+                // Array of products
+                const products = [
+                    {
+                        "id": 1,
+                        "title": "Áo Đá Bóng Bồ Đào Nha",
+                        "price": "₫130,000",
+                        "description": "Mô tả",
+                        "image": "../assets/img/shirt/1.jpeg"
+                    },
+                    {
+                        "id": 2,
+                        "title": "Áo Đá Bóng Argetina",
+                        "price": "₫130,000",
+                        "description": "Mô tả",
+                        "image": "../assets/img/shirt/2.webp"
+                    },
+                    {
+                        "id": 3,
+                        "title": "Áo Đá Bóng Pics",
+                        "price": "₫130,000",
+                        "description": "Mô tả",
+                        "image": "../assets/img/shirt/3.jpg"
+                    },
+                    {
+                        "id": 4,
+                        "title": "Áo Đá Bóng Poncon",
+                        "price": "₫130,000",
+                        "description": "Mô tả",
+                        "image": "../assets/img/shirt/4.jpg"
+                    },
+                    {
+                        "id": 5,
+                        "title": "Áo Đá Bóng Sườn Xám",
+                        "price": "₫130,000",
+                        "description": "Mô tả",
+                        "image": "../assets/img/shirt/5.jpg"
+                    },
+                    {
+                        "id": 6,
+                        "title": "Áo Đá Bóng Tottanham",
+                        "price": "₫130,000",
+                        "description": "Mô tả",
+                        "image": "../assets/img/shirt/12.jpg"
+                    },
+                    {
+                        "id": 7,
+                        "title": "Áo Đá Bóng Bồ Sọc",
+                        "price": "₫130,000",
+                        "description": "Mô tả",
+                        "image": "../assets/img/shirt/7.png"
+                    },
+                    {
+                        "id": 8,
+                        "title": "Áo Đá Bóng Arsenal",
+                        "price": "₫130,000",
+                        "description": "Mô tả",
+                        "image": "../assets/img/shirt/8.jpg"
+                    },
+                    {
+                        "id": 9,
+                        "title": "Áo Đá Bóng Có Cổ Xanh",
+                        "price": "₫130,000",
+                        "description": "Mô tả",
+                        "image": "../assets/img/shirt/9.jpg"
+                    },
+                    {
+                        "id": 10,
+                        "title": "Áo Đá Bóng Đức",
+                        "price": "₫130,000",
+                        "description": "Mô tả",
+                        "image": "../assets/img/shirt/10.jpg"
+                    },
+                    {
+                        "id": 11,
+                        "title": "Áo Đá Bóng Pháp",
+                        "price": "₫130,000",
+                        "description": "Mô tả",
+                        "image": "../assets/img/shirt/11.jpg"
+                    },
+                    {
+                        "id": 12,
+                        "title": "Áo Đá Bóng Mu",
+                        "price": "₫130,000",
+                        "description": "Mô tả",
+                        "image": "../assets/img/shirt/12.jpg"
+                    }
+                ];
+
+                // Find the matching product
+                const product = products.find((product) => product.id === parseInt(productId));
+
+                // Display the product information
+                if (product) {
+                    const productDetailsContainer = document.getElementById("product-details");
+                    productDetailsContainer.innerHTML = `
+
+
+                        
             <div class="t__main__left">
                 <div class="t__left__img">
-                    <img src="../assets/img/ao-bong-da-barca-2023-home-front.jpg" alt="áo bóng đá">
+                    <img src="${product.image}">
                 </div>
             </div>
             <div class="t__main__right">
+                
                 <div class="text">
                     <div class="text__name-product">
-                        Quần áo Inter Miami 2023 - 2024<br>
+                        ${product.title}<br>
                     </div>
                     <div class="text__price-product">
-                        ₫115,000
+                        ${product.price}
                     </div>
                     <div class="text__inf-product">
-                        Đây là mẫu concept thiết kế Quần Áo Miami đặt may thiết kế theo yêu cầu.
-                        Quần & Vị trí Logo/Màu áo thay đổi theo ý bạn hoặc bỏ đi.
+                        ${product.description}
                         <br>
                     </div>
                     <div class="quality-product">
@@ -76,13 +185,13 @@
                     <button class="button-size">XL</button>
                     <button class="button-size">XXL</button>
                 </div>
-                <div class="add-cart">
-                    <button class="button-order" onclick="addToCart()">
-                        <p>THÊM VÀO GIỎ HÀNG</p>
-                        <p>Xem giỏ hàng để tùy chỉnh số lượng</p>
-                    </button>
+
+
+                <div class="add-cart" onClick="addProductToCart(${product.id})">
+                    <p>THÊM VÀO GIỎ HÀNG</p>
                 </div>
-                <ul id="cart-items"></ul>
+
+                
                 <div class="price-list">
                     <div class="l__price-list">
                         <h style="color: rgb(204, 6, 6);">Đặt càng nhiều - Giá càng rẻ</h>
@@ -115,6 +224,16 @@
                     </table>
                 </div>
             </div>
+                
+                
+                `;
+                } else {
+                    // Handle the case when the product is not found
+                    const productDetailsContainer = document.getElementById("product-details");
+                    productDetailsContainer.innerHTML = "<p>Product not found.</p>";
+                }
+            </script>
+
         </div>
         <!-- voucher -->
         <div class="m__main-product">
@@ -332,13 +451,14 @@
                 <div class="footer-col">
                     <h class="title">LIÊN KẾT</h>
                     <p>Hãy kết nối với chúng tôi</p>
-                </div>   
+                </div>
             </div>
             <div class="footer-map">
                 <h class="title">Bản đồ</h>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9319.359337965549!2d106.61292152262905!3d10.86416742653209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752b2a11844fb9%3A0xbed3d5f0a6d6e0fe!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBHaWFvIFRow7RuZyBW4bqtbiBU4bqjaSBUaMOgbmggUGjhu5EgSOG7kyBDaMOtIE1pbmggLSBDxqEgc-G7nyAz!5e0!3m2!1svi!2s!4v1698210425281!5m2!1svi!2s"
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9319.359337965549!2d106.61292152262905!3d10.86416742653209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752b2a11844fb9%3A0xbed3d5f0a6d6e0fe!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBHaWFvIFRow7RuZyBW4bqtbiBU4bqjaSBUaMOgbmggUGjhu5EgSOG7kyBDaMOtIE1pbmggLSBDxqEgc-G7nyAz!5e0!3m2!1svi!2s!4v1698210425281!5m2!1svi!2s"
                     width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>  
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="footer-address">
                 <div class="footer-add_logo">
@@ -356,8 +476,113 @@
             <div class="footer-bottom">
                 Copyright 2023 © Leo Sport
             </div>
-        </div> 
+        </div>
     </div>
 </body>
+
+<script>
+    function addProductToCart(productId) {
+        const products =
+            [
+                {
+                    "id": 1,
+                    "title": "Áo Đá Bóng Bồ Đào Nha",
+                    "price": "₫130,000",
+                    "description": "Mô tả",
+                    "image": "../assets/img/shirt/1.jpeg"
+                },
+                {
+                    "id": 2,
+                    "title": "Áo Đá Bóng Argetina",
+                    "price": "₫130,000",
+                    "description": "Mô tả",
+                    "image": "../assets/img/shirt/2.webp"
+                },
+                {
+                    "id": 3,
+                    "title": "Áo Đá Bóng Pics",
+                    "price": "₫130,000",
+                    "description": "Mô tả",
+                    "image": "../assets/img/shirt/3.jpg"
+                },
+                {
+                    "id": 4,
+                    "title": "Áo Đá Bóng Poncon",
+                    "price": "₫130,000",
+                    "description": "Mô tả",
+                    "image": "../assets/img/shirt/4.jpg"
+                },
+                {
+                    "id": 5,
+                    "title": "Áo Đá Bóng Sườn Xám",
+                    "price": "₫130,000",
+                    "description": "Mô tả",
+                    "image": "../assets/img/shirt/5.jpg"
+                },
+                {
+                    "id": 6,
+                    "title": "Áo Đá Bóng Tottanham",
+                    "price": "₫130,000",
+                    "description": "Mô tả",
+                    "image": "../assets/img/shirt/12.jpg"
+                },
+                {
+                    "id": 7,
+                    "title": "Áo Đá Bóng Bồ Sọc",
+                    "price": "₫130,000",
+                    "description": "Mô tả",
+                    "image": "../assets/img/shirt/7.png"
+                },
+                {
+                    "id": 8,
+                    "title": "Áo Đá Bóng Arsenal",
+                    "price": "₫130,000",
+                    "description": "Mô tả",
+                    "image": "../assets/img/shirt/8.jpg"
+                },
+                {
+                    "id": 9,
+                    "title": "Áo Đá Bóng Có Cổ Xanh",
+                    "price": "₫130,000",
+                    "description": "Mô tả",
+                    "image": "../assets/img/shirt/9.jpg"
+                },
+                {
+                    "id": 10,
+                    "title": "Áo Đá Bóng Đức",
+                    "price": "₫130,000",
+                    "description": "Mô tả",
+                    "image": "../assets/img/shirt/10.jpg"
+                },
+                {
+                    "id": 11,
+                    "title": "Áo Đá Bóng Pháp",
+                    "price": "₫130,000",
+                    "description": "Mô tả",
+                    "image": "../assets/img/shirt/11.jpg"
+                },
+                {
+                    "id": 12,
+                    "title": "Áo Đá Bóng Mu",
+                    "price": "₫130,000",
+                    "description": "Mô tả",
+                    "image": "../assets/img/shirt/12.jpg"
+                }
+            ];
+
+        products.forEach((product) => {
+            if (product.id === productId) {
+                console.log("Add product to cart: ");
+                console.log(product);
+
+                // Thêm sản phẩm đã chọn vào danh sách JSON
+                const storedProducts = JSON.parse(localStorage.getItem("storedProducts")) || [];
+                storedProducts.push(product);
+                localStorage.setItem("storedProducts", JSON.stringify(storedProducts));
+
+            }
+        })
+    }
+</script>
 
 </html>

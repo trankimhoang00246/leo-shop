@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "title": "Áo Đá Bóng Bồ Đào Nha",
+        "price": "₫130,000",
+        "description": "Mô tả",
+        "image": "../assets/img/shirt/1.jpeg"
+    },
+    {
+        "id": 2,
+        "title": "Áo Đá Bóng Argetina",
+        "price": "₫130,000",
+        "description": "Mô tả",
+        "image": "../assets/img/shirt/2.webp"
+    },
+    {
+        "id": 3,
+        "title": "Áo Đá Bóng Pics",
+        "price": "₫130,000",
+        "description": "Mô tả",
+        "image": "../assets/img/shirt/3.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Áo Đá Bóng Poncon",
+        "price": "₫130,000",
+        "description": "Mô tả",
+        "image": "../assets/img/shirt/4.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Áo Đá Bóng Sườn Xám",
+        "price": "₫130,000",
+        "description": "Mô tả",
+        "image": "../assets/img/shirt/5.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Áo Đá Bóng Tottanham",
+        "price": "₫130,000",
+        "description": "Mô tả",
+        "image": "../assets/img/shirt/12.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Áo Đá Bóng Bồ Sọc",
+        "price": "₫130,000",
+        "description": "Mô tả",
+        "image": "../assets/img/shirt/7.png"
+    },
+    {
+        "id": 8,
+        "title": "Áo Đá Bóng Arsenal",
+        "price": "₫130,000",
+        "description": "Mô tả",
+        "image": "../assets/img/shirt/8.jpg"
+    },
+    {
+        "id": 9,
+        "title": "Áo Đá Bóng Có Cổ Xanh",
+        "price": "₫130,000",
+        "description": "Mô tả",
+        "image": "../assets/img/shirt/9.jpg"
+    },
+    {
+        "id": 10,
+        "title": "Áo Đá Bóng Đức",
+        "price": "₫130,000",
+        "description": "Mô tả",
+        "image": "../assets/img/shirt/10.jpg"
+    },
+    {
+        "id": 11,
+        "title": "Áo Đá Bóng Pháp",
+        "price": "₫130,000",
+        "description": "Mô tả",
+        "image": "../assets/img/shirt/11.jpg"
+    },
+    {
+        "id": 12,
+        "title": "Áo Đá Bóng Mu",
+        "price": "₫130,000",
+        "description": "Mô tả",
+        "image": "../assets/img/shirt/12.jpg"
+    }
+]
