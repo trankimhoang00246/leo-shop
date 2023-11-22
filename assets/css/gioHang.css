@@ -10,23 +10,85 @@
 .l_container{
     width: 80%;
     margin-right: 30px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
 }
 
-table{
+.title-cart {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0 24px;
+}
+/* css table  */
+
+/* chonj */
+.chon {
+    margin: 0 32px;
+}
+.table-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img_text {
+    background-color: bisque;
+    display: flex;
+}
+
+.img_cart {
+    width: 10%;
+}
+
+.img_cart img {
     width: 100%;
-    border-collapse:collapse;
 }
-th, td{
-    width: fit-content;
-    padding: 10px;
+
+.buy-amount {
+    display: flex;
+}
+
+.buy-amount button {
+    width: 35px;
+    height: 35px;
+    outline: none;
+    background: none;
+    border: 1px solid #ececec;
+    cursor: pointer;
+}
+
+.buy-amount button:hover {
+    background-color: #ececec;
+}
+
+.buy-amount button svg {
+    color: #909090;
+}
+
+.buy-amount button:hover svg {
+    color: #4f4f4f;
+}
+
+.buy-amount .amount {
+    width: 40px;
     text-align: center;
+    border: 1px solid #ececec;
 }
-caption{
-    padding-top: 20px;
-    font-weight: 600; 
-    font-size: 1.2em;
+
+.delete-p button {
+    width: 25px;
+    height: 25px;
+    outline: none;
+    background: none;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    margin-right: 32px;
 }
+
+.delete-p button:hover svg {
+    color: red;
+}
+
+/* css phần mua  */
 #cart > #clearAll{
     float: right;
 }
@@ -39,50 +101,6 @@ button{
     width: 100%; 
 } */
 
-.img_text{
-    background-color: bisque;
-    display: flex;
-    justify-content:flex-start;
-}
-.img_cart img{
-    width: 25%;
-}
-.buy-amount{
-    display: flex;
-}
-.buy-amount button{ 
-    width: 35px;
-    height: 35px;
-    outline: none;
-    background: none;
-    border: 1px solid #ececec;
-    cursor: pointer;
-}
-.buy-amount button:hover{
-    background-color: #ececec;
-}
-.buy-amount button svg{
-    color: #909090;
-}
-.buy-amount button:hover svg{
-    color: #4f4f4f;
-}
-.buy-amount .amount{
-    width: 40px;
-    text-align: center;
-    border: 1px solid #ececec;
-}
-.delete-p button{
-    width: 25px;
-    height: 25px;
-    outline: none;
-    background: none;
-    border: 1px solid #ffffff;
-    cursor: pointer;
-}
-.delete-p button:hover svg{
-    color: red;
-}
 .r_container{
     width: 20%;
     height: fit-content;
@@ -144,11 +162,12 @@ button{
 }
 
 .r_bottom_container > button{
-    width: 90%;
+    width: 100%;
     background-color: #F8F8FF;
     height:max-content;
-    margin-top: 25px;
-    font-size: 13px; /* Kích thước chữ */
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-size: 16px; /* Kích thước chữ */
     border: none;
     cursor: pointer; /* Con trỏ khi rê chuột */
     text-decoration: underline;
