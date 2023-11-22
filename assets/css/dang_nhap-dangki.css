@@ -56,7 +56,7 @@ body {
     color: black;
 }
 
-.box input[type="submit"] {
+.box button {
     background: none;
     outline: none;
     width: 160px;
@@ -69,7 +69,7 @@ body {
     transition: 1s;
 }
 
-.box input[type="submit"]:hover {
+.box button:hover {
     background: #002cff;
     transition: 1s;
 }
