@@ -12,14 +12,56 @@
     <div class="section">
         <form class="box" method="post" action="#">
             <H1>ĐĂNG KÍ TÀI KHOẢN</H1>
-            <input type="text" placeholder="Tên">
-            <input type="text" placeholder="Email">
-            <input type="text" placeholder="Số điện thoại">
-            <input type="Password" placeholder="Password">
+            <input id="ten" type="text" placeholder="Tên">
+            <input id="email" type="text" placeholder="Email">
+            <input id="sdt" type="text" placeholder="Số điện thoại">
+            <input id="pw" type="Password" placeholder="Password">
 
-            <input type="submit" name="dangnhap" value="ĐĂNG KÍ">
+            <p>
+                <button type="button" onclick="return kiemtra()">Đăng kí</button>
+            </p>
+
+            <div id="kq"></div>
         </form>
+
+        
     </div>
 </body>
+
+<script>
+    function kiemtra() {
+        thanhcong = true;
+        thongbao = "";
+
+        //kiem tra ten sp
+        var sp = document.getElementById("ten");
+        if (sp.value.length == 0) {
+            thongbao += "Vui lòng nhập tên<br>";
+            thanhcong = false;
+        }
+
+        var sp = document.getElementById("email");
+        if (sp.value.length == 0) {
+            thongbao += "Vui lòng nhập email<br>";
+            thanhcong = false;
+        }
+
+        var sp = document.getElementById("sdt");
+        if (sp.value.length == 0) {
+            thongbao += "Vui lòng nhập số điện thoại<br>";
+            thanhcong = false;
+        }
+
+        var sp = document.getElementById("pw");
+        if (sp.value.length == 0) {
+            thongbao += "Vui lòng nhập password<br>";
+            thanhcong = false;
+        }
+
+        if (thongbao == "") thongbao = "Nhập đúng dữ liệu";
+        document.getElementById("kq").innerHTML = thongbao;
+        return thanhcong;
+    }
+</script>
 
 </html>
