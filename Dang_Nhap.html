@@ -10,7 +10,7 @@
 
 <body>
     <div class="section">
-        <form class="box" method="post" action="">
+        <form class="box" method="post" action="#">
             <H1>ĐĂNG NHẬP TÀI KHOẢN</H1>
             <input id="email" type="text" placeholder="Email">
             <input id="password" type="password" placeholder="Password">
@@ -18,7 +18,6 @@
             <div id="kq"></div>
         </form>
     </div>
-
 
 </body>
 <script>
@@ -38,7 +37,8 @@
             thongbao+="Vui lòng nhập Password";
             thanhcong=false;
         }
-        if(thongbao=="")thongbao="nhập đúng dữ liệu";
+
+        if(thongbao=="") thongbao = "Nhập đúng dữ liệu";
         document.getElementById("kq").innerHTML=thongbao;
         return thanhcong;
     }
