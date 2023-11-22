@@ -73,3 +73,9 @@ body {
     background: #002cff;
     transition: 1s;
 }
+
+#kq {
+    color: red;
+    font-weight: bold;
+    line-height: 1.7rem;
+}

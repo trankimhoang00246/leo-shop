@@ -16,7 +16,7 @@ function showSlides() {
   }
 
   slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 3000); // Chuyển đổi ảnh mỗi 3 giây
+  setTimeout(showSlides, 2000); // Chuyển đổi ảnh mỗi 3 giây
 }
 
 function plusSlides(n) {
